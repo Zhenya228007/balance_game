@@ -1,0 +1,2309 @@
+{
+  "version": 1,
+  "modes": [
+    {
+      "id": "date",
+      "title": "Свидание",
+      "players": "2",
+      "params": [
+        "closeness",
+        "passion",
+        "respect"
+      ],
+      "param_labels": [
+        "🫶 Близость",
+        "🔥 Страсть",
+        "🛡️ Уважение"
+      ]
+    },
+    {
+      "id": "friends",
+      "title": "Свои люди",
+      "players": "2+",
+      "params": [
+        "chaos",
+        "loyalty",
+        "vibe"
+      ],
+      "param_labels": [
+        "🤪 Хаос",
+        "🤝 Верность",
+        "😂 Вайб"
+      ]
+    },
+    {
+      "id": "campus",
+      "title": "Универ / Тусовка",
+      "players": "3+",
+      "params": [
+        "solidarity",
+        "freebie",
+        "madness"
+      ],
+      "param_labels": [
+        "📚 Солидарность",
+        "🍕 Халява",
+        "😈 Безумие"
+      ]
+    },
+    {
+      "id": "office",
+      "title": "Офисный планктон",
+      "players": "4+",
+      "params": [
+        "spirit",
+        "professionalism",
+        "party"
+      ],
+      "param_labels": [
+        "☕ Командный дух",
+        "💼 Профессионализм",
+        "🍻 Корпоратив"
+      ]
+    },
+    {
+      "id": "family",
+      "title": "Семейный",
+      "players": "3+",
+      "params": [
+        "wisdom",
+        "care",
+        "traditions"
+      ],
+      "param_labels": [
+        "👵 Мудрость",
+        "🧸 Забота",
+        "🍳 Традиции"
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "date_01",
+      "mode": "date",
+      "text": "Партнёры должны рассказывать друг другу всё, без секретов.",
+      "swipe_left": {
+        "label": "Согласен",
+        "effects": {
+          "closeness": 15,
+          "passion": -5,
+          "respect": -10
+        }
+      },
+      "swipe_right": {
+        "label": "Не согласен",
+        "effects": {
+          "closeness": -10,
+          "passion": 5,
+          "respect": 5
+        }
+      }
+    },
+    {
+      "id": "date_02",
+      "mode": "date",
+      "text": "Если тревожно, можно проверить телефон партнёра.",
+      "swipe_left": {
+        "label": "Согласен",
+        "effects": {
+          "closeness": 10,
+          "passion": 5,
+          "respect": -15
+        }
+      },
+      "swipe_right": {
+        "label": "Не согласен",
+        "effects": {
+          "closeness": -5,
+          "passion": -5,
+          "respect": 10
+        }
+      }
+    },
+    {
+      "id": "date_03",
+      "mode": "date",
+      "text": "Спонтанный поцелуй на людях — это здорово.",
+      "swipe_left": {
+        "label": "Согласен",
+        "effects": {
+          "closeness": 5,
+          "passion": 15,
+          "respect": -20
+        }
+      },
+      "swipe_right": {
+        "label": "Не согласен",
+        "effects": {
+          "closeness": -5,
+          "passion": -10,
+          "respect": 15
+        }
+      }
+    },
+    {
+      "id": "date_04",
+      "mode": "date",
+      "text": "Ради свидания стоит отменить встречу с друзьями.",
+      "swipe_left": {
+        "label": "Согласен",
+        "effects": {
+          "closeness": 15,
+          "passion": 5,
+          "respect": -20
+        }
+      },
+      "swipe_right": {
+        "label": "Не согласен",
+        "effects": {
+          "closeness": -10,
+          "passion": -5,
+          "respect": 15
+        }
+      }
+    },
+    {
+      "id": "date_05",
+      "mode": "date",
+      "text": "Подарок своими руками лучше дорогого, даже если вышло криво.",
+      "swipe_left": {
+        "label": "Согласен",
+        "effects": {
+          "closeness": 15,
+          "passion": -5,
+          "respect": -10
+        }
+      },
+      "swipe_right": {
+        "label": "Не согласен",
+        "effects": {
+          "closeness": -10,
+          "passion": 10,
+          "respect": 0
+        }
+      }
+    },
+    {
+      "id": "date_06",
+      "mode": "date",
+      "text": "Первым извиняться должен тот, кто больше любит.",
+      "swipe_left": {
+        "label": "Согласен",
+        "effects": {
+          "closeness": 10,
+          "passion": -5,
+          "respect": -5
+        }
+      },
+      "swipe_right": {
+        "label": "Не согласен",
+        "effects": {
+          "closeness": -10,
+          "passion": 5,
+          "respect": 5
+        }
+      }
+    },
+    {
+      "id": "date_07",
+      "mode": "date",
+      "text": "Отпуск лучше проводить только вместе.",
+      "swipe_left": {
+        "label": "Согласен",
+        "effects": {
+          "closeness": 15,
+          "passion": -5,
+          "respect": -10
+        }
+      },
+      "swipe_right": {
+        "label": "Не согласен",
+        "effects": {
+          "closeness": -15,
+          "passion": 10,
+          "respect": 5
+        }
+      }
+    },
+    {
+      "id": "date_08",
+      "mode": "date",
+      "text": "Ревность — признак любви.",
+      "swipe_left": {
+        "label": "Согласен",
+        "effects": {
+          "closeness": 10,
+          "passion": 15,
+          "respect": -25
+        }
+      },
+      "swipe_right": {
+        "label": "Не согласен",
+        "effects": {
+          "closeness": -10,
+          "passion": -10,
+          "respect": 20
+        }
+      }
+    },
+    {
+      "id": "date_09",
+      "mode": "date",
+      "text": "Можно отказать в близости, даже если партнёр старался весь вечер.",
+      "swipe_left": {
+        "label": "Согласен",
+        "effects": {
+          "closeness": -10,
+          "passion": -10,
+          "respect": 20
+        }
+      },
+      "swipe_right": {
+        "label": "Не согласен",
+        "effects": {
+          "closeness": 5,
+          "passion": 15,
+          "respect": -20
+        }
+      }
+    },
+    {
+      "id": "date_10",
+      "mode": "date",
+      "text": "Лучше горькая правда, чем сладкая ложь.",
+      "swipe_left": {
+        "label": "Согласен",
+        "effects": {
+          "closeness": -10,
+          "passion": -5,
+          "respect": 15
+        }
+      },
+      "swipe_right": {
+        "label": "Не согласен",
+        "effects": {
+          "closeness": 10,
+          "passion": 5,
+          "respect": -15
+        }
+      }
+    },
+    {
+      "id": "date_11",
+      "mode": "date",
+      "text": "Бывшие — запретная тема для разговоров.",
+      "swipe_left": {
+        "label": "Согласен",
+        "effects": {
+          "closeness": 5,
+          "passion": -10,
+          "respect": 5
+        }
+      },
+      "swipe_right": {
+        "label": "Не согласен",
+        "effects": {
+          "closeness": -5,
+          "passion": 10,
+          "respect": -5
+        }
+      }
+    },
+    {
+      "id": "date_12",
+      "mode": "date",
+      "text": "Ради партнёра я бы переехал(а) в другой город.",
+      "swipe_left": {
+        "label": "Согласен",
+        "effects": {
+          "closeness": 20,
+          "passion": 5,
+          "respect": -25
+        }
+      },
+      "swipe_right": {
+        "label": "Не согласен",
+        "effects": {
+          "closeness": -15,
+          "passion": -5,
+          "respect": 20
+        }
+      }
+    },
+    {
+      "id": "date_13",
+      "mode": "date",
+      "text": "Романтика важнее денег.",
+      "swipe_left": {
+        "label": "Согласен",
+        "effects": {
+          "closeness": 10,
+          "passion": 15,
+          "respect": -25
+        }
+      },
+      "swipe_right": {
+        "label": "Не согласен",
+        "effects": {
+          "closeness": -10,
+          "passion": -15,
+          "respect": 25
+        }
+      }
+    },
+    {
+      "id": "date_14",
+      "mode": "date",
+      "text": "Нельзя ложиться спать, не помирившись.",
+      "swipe_left": {
+        "label": "Согласен",
+        "effects": {
+          "closeness": 15,
+          "passion": -10,
+          "respect": -5
+        }
+      },
+      "swipe_right": {
+        "label": "Не согласен",
+        "effects": {
+          "closeness": -15,
+          "passion": 10,
+          "respect": 5
+        }
+      }
+    },
+    {
+      "id": "date_15",
+      "mode": "date",
+      "text": "Мы бы выложили совместное фото в соцсети прямо сейчас.",
+      "swipe_left": {
+        "label": "Согласен",
+        "effects": {
+          "closeness": 5,
+          "passion": 10,
+          "respect": -15
+        }
+      },
+      "swipe_right": {
+        "label": "Не согласен",
+        "effects": {
+          "closeness": -5,
+          "passion": -10,
+          "respect": 15
+        }
+      }
+    },
+    {
+      "id": "date_16",
+      "mode": "date",
+      "text": "Сутки полностью слушаться партнёра — отличная идея.",
+      "swipe_left": {
+        "label": "Согласен",
+        "effects": {
+          "closeness": 10,
+          "passion": 10,
+          "respect": -20
+        }
+      },
+      "swipe_right": {
+        "label": "Не согласен",
+        "effects": {
+          "closeness": -5,
+          "passion": -10,
+          "respect": 15
+        }
+      }
+    },
+    {
+      "id": "date_17",
+      "mode": "date",
+      "text": "Иногда стоит поссориться, чтобы освежить чувства.",
+      "swipe_left": {
+        "label": "Согласен",
+        "effects": {
+          "closeness": -10,
+          "passion": 15,
+          "respect": -5
+        }
+      },
+      "swipe_right": {
+        "label": "Не согласен",
+        "effects": {
+          "closeness": 10,
+          "passion": -15,
+          "respect": 5
+        }
+      }
+    },
+    {
+      "id": "date_18",
+      "mode": "date",
+      "text": "Смотреть ненавистный жанр кино ради партнёра — нормально.",
+      "swipe_left": {
+        "label": "Согласен",
+        "effects": {
+          "closeness": 15,
+          "passion": -10,
+          "respect": -5
+        }
+      },
+      "swipe_right": {
+        "label": "Не согласен",
+        "effects": {
+          "closeness": -10,
+          "passion": 5,
+          "respect": 5
+        }
+      }
+    },
+    {
+      "id": "date_19",
+      "mode": "date",
+      "text": "Подшутить над партнёром при друзьях — безобидно.",
+      "swipe_left": {
+        "label": "Согласен",
+        "effects": {
+          "closeness": -5,
+          "passion": 15,
+          "respect": -10
+        }
+      },
+      "swipe_right": {
+        "label": "Не согласен",
+        "effects": {
+          "closeness": 5,
+          "passion": -15,
+          "respect": 10
+        }
+      }
+    },
+    {
+      "id": "date_20",
+      "mode": "date",
+      "text": "Я готов(а) первым(ой) признаться в любви прямо сейчас.",
+      "swipe_left": {
+        "label": "Согласен",
+        "effects": {
+          "closeness": 15,
+          "passion": 10,
+          "respect": -25
+        }
+      },
+      "swipe_right": {
+        "label": "Не согласен",
+        "effects": {
+          "closeness": -10,
+          "passion": -10,
+          "respect": 20
+        }
+      }
+    },
+    {
+      "id": "friends_01",
+      "mode": "friends",
+      "text": "Прикрыть друга перед его второй половинкой — святое.",
+      "swipe_left": {
+        "label": "Согласен",
+        "effects": {
+          "chaos": -10,
+          "loyalty": 20,
+          "vibe": -10
+        }
+      },
+      "swipe_right": {
+        "label": "Не согласен",
+        "effects": {
+          "chaos": 10,
+          "loyalty": -15,
+          "vibe": 5
+        }
+      }
+    },
+    {
+      "id": "friends_02",
+      "mode": "friends",
+      "text": "На безумную идею в 3 ночи всегда нужно отвечать «погнали».",
+      "swipe_left": {
+        "label": "Согласен",
+        "effects": {
+          "chaos": 20,
+          "loyalty": 5,
+          "vibe": -25
+        }
+      },
+      "swipe_right": {
+        "label": "Не согласен",
+        "effects": {
+          "chaos": -15,
+          "loyalty": -5,
+          "vibe": 20
+        }
+      }
+    },
+    {
+      "id": "friends_03",
+      "mode": "friends",
+      "text": "Рассказать всем о постыдном случае друга, если это смешно.",
+      "swipe_left": {
+        "label": "Согласен",
+        "effects": {
+          "chaos": 10,
+          "loyalty": -20,
+          "vibe": 10
+        }
+      },
+      "swipe_right": {
+        "label": "Не согласен",
+        "effects": {
+          "chaos": -5,
+          "loyalty": 15,
+          "vibe": -10
+        }
+      }
+    },
+    {
+      "id": "friends_04",
+      "mode": "friends",
+      "text": "Одолжить другу последние деньги.",
+      "swipe_left": {
+        "label": "Согласен",
+        "effects": {
+          "chaos": -10,
+          "loyalty": 20,
+          "vibe": -10
+        }
+      },
+      "swipe_right": {
+        "label": "Не согласен",
+        "effects": {
+          "chaos": 5,
+          "loyalty": -20,
+          "vibe": 15
+        }
+      }
+    },
+    {
+      "id": "friends_05",
+      "mode": "friends",
+      "text": "Устроить другу сюрприз без спроса.",
+      "swipe_left": {
+        "label": "Согласен",
+        "effects": {
+          "chaos": 15,
+          "loyalty": 10,
+          "vibe": -25
+        }
+      },
+      "swipe_right": {
+        "label": "Не согласен",
+        "effects": {
+          "chaos": -10,
+          "loyalty": -5,
+          "vibe": 15
+        }
+      }
+    },
+    {
+      "id": "friends_06",
+      "mode": "friends",
+      "text": "С вечеринки можно уйти, не попрощавшись.",
+      "swipe_left": {
+        "label": "Согласен",
+        "effects": {
+          "chaos": -5,
+          "loyalty": -10,
+          "vibe": 15
+        }
+      },
+      "swipe_right": {
+        "label": "Не согласен",
+        "effects": {
+          "chaos": 5,
+          "loyalty": 10,
+          "vibe": -15
+        }
+      }
+    },
+    {
+      "id": "friends_07",
+      "mode": "friends",
+      "text": "Лучший друг важнее отношений.",
+      "swipe_left": {
+        "label": "Согласен",
+        "effects": {
+          "chaos": -5,
+          "loyalty": 20,
+          "vibe": -15
+        }
+      },
+      "swipe_right": {
+        "label": "Не согласен",
+        "effects": {
+          "chaos": 5,
+          "loyalty": -20,
+          "vibe": 15
+        }
+      }
+    },
+    {
+      "id": "friends_08",
+      "mode": "friends",
+      "text": "Выложить смешное видео с другом без его ведома.",
+      "swipe_left": {
+        "label": "Согласен",
+        "effects": {
+          "chaos": 15,
+          "loyalty": -20,
+          "vibe": 5
+        }
+      },
+      "swipe_right": {
+        "label": "Не согласен",
+        "effects": {
+          "chaos": -10,
+          "loyalty": 10,
+          "vibe": -5
+        }
+      }
+    },
+    {
+      "id": "friends_09",
+      "mode": "friends",
+      "text": "На «слабо?» нужно отвечать всегда.",
+      "swipe_left": {
+        "label": "Согласен",
+        "effects": {
+          "chaos": 20,
+          "loyalty": -5,
+          "vibe": -15
+        }
+      },
+      "swipe_right": {
+        "label": "Не согласен",
+        "effects": {
+          "chaos": -15,
+          "loyalty": 5,
+          "vibe": 10
+        }
+      }
+    },
+    {
+      "id": "friends_10",
+      "mode": "friends",
+      "text": "Сказать другу, что его кулинарный эксперимент несъедобен.",
+      "swipe_left": {
+        "label": "Согласен",
+        "effects": {
+          "chaos": -5,
+          "loyalty": 15,
+          "vibe": -10
+        }
+      },
+      "swipe_right": {
+        "label": "Не согласен",
+        "effects": {
+          "chaos": 5,
+          "loyalty": -15,
+          "vibe": 10
+        }
+      }
+    },
+    {
+      "id": "friends_11",
+      "mode": "friends",
+      "text": "Заваливаться к другу ночевать без предупреждения — нормально.",
+      "swipe_left": {
+        "label": "Согласен",
+        "effects": {
+          "chaos": 10,
+          "loyalty": 10,
+          "vibe": -20
+        }
+      },
+      "swipe_right": {
+        "label": "Не согласен",
+        "effects": {
+          "chaos": -5,
+          "loyalty": -10,
+          "vibe": 15
+        }
+      }
+    },
+    {
+      "id": "friends_12",
+      "mode": "friends",
+      "text": "Поход с друзьями лучше отпуска на море.",
+      "swipe_left": {
+        "label": "Согласен",
+        "effects": {
+          "chaos": 15,
+          "loyalty": 5,
+          "vibe": -20
+        }
+      },
+      "swipe_right": {
+        "label": "Не согласен",
+        "effects": {
+          "chaos": -10,
+          "loyalty": -5,
+          "vibe": 15
+        }
+      }
+    },
+    {
+      "id": "friends_13",
+      "mode": "friends",
+      "text": "Друг опаздывает на два часа — всё равно ждём.",
+      "swipe_left": {
+        "label": "Согласен",
+        "effects": {
+          "chaos": -5,
+          "loyalty": 15,
+          "vibe": -10
+        }
+      },
+      "swipe_right": {
+        "label": "Не согласен",
+        "effects": {
+          "chaos": 5,
+          "loyalty": -15,
+          "vibe": 10
+        }
+      }
+    },
+    {
+      "id": "friends_14",
+      "mode": "friends",
+      "text": "Каждому в компании нужен прозвище-позорище.",
+      "swipe_left": {
+        "label": "Согласен",
+        "effects": {
+          "chaos": 15,
+          "loyalty": -10,
+          "vibe": -5
+        }
+      },
+      "swipe_right": {
+        "label": "Не согласен",
+        "effects": {
+          "chaos": -10,
+          "loyalty": 5,
+          "vibe": 5
+        }
+      }
+    },
+    {
+      "id": "friends_15",
+      "mode": "friends",
+      "text": "Помочь другу с переездом в выходной вместо отдыха.",
+      "swipe_left": {
+        "label": "Согласен",
+        "effects": {
+          "chaos": -15,
+          "loyalty": 20,
+          "vibe": -5
+        }
+      },
+      "swipe_right": {
+        "label": "Не согласен",
+        "effects": {
+          "chaos": 10,
+          "loyalty": -20,
+          "vibe": 10
+        }
+      }
+    },
+    {
+      "id": "friends_16",
+      "mode": "friends",
+      "text": "Рассказать другу, что его новая пассия вам не нравится.",
+      "swipe_left": {
+        "label": "Согласен",
+        "effects": {
+          "chaos": -10,
+          "loyalty": 15,
+          "vibe": -5
+        }
+      },
+      "swipe_right": {
+        "label": "Не согласен",
+        "effects": {
+          "chaos": 10,
+          "loyalty": -15,
+          "vibe": 5
+        }
+      }
+    },
+    {
+      "id": "friends_17",
+      "mode": "friends",
+      "text": "Устроить розыгрыш, который может обидеть.",
+      "swipe_left": {
+        "label": "Согласен",
+        "effects": {
+          "chaos": 20,
+          "loyalty": -15,
+          "vibe": -5
+        }
+      },
+      "swipe_right": {
+        "label": "Не согласен",
+        "effects": {
+          "chaos": -15,
+          "loyalty": 10,
+          "vibe": 5
+        }
+      }
+    },
+    {
+      "id": "friends_18",
+      "mode": "friends",
+      "text": "Тайна друга остаётся тайной, даже если она опасна.",
+      "swipe_left": {
+        "label": "Согласен",
+        "effects": {
+          "chaos": -5,
+          "loyalty": 20,
+          "vibe": -15
+        }
+      },
+      "swipe_right": {
+        "label": "Не согласен",
+        "effects": {
+          "chaos": 5,
+          "loyalty": -20,
+          "vibe": 15
+        }
+      }
+    },
+    {
+      "id": "friends_19",
+      "mode": "friends",
+      "text": "Выбрать ради компании худший бар города.",
+      "swipe_left": {
+        "label": "Согласен",
+        "effects": {
+          "chaos": 10,
+          "loyalty": 10,
+          "vibe": -20
+        }
+      },
+      "swipe_right": {
+        "label": "Не согласен",
+        "effects": {
+          "chaos": -10,
+          "loyalty": -10,
+          "vibe": 20
+        }
+      }
+    },
+    {
+      "id": "friends_20",
+      "mode": "friends",
+      "text": "Рассказать друзьям о своей самой неловкой истории прямо сейчас.",
+      "swipe_left": {
+        "label": "Согласен",
+        "effects": {
+          "chaos": 10,
+          "loyalty": -5,
+          "vibe": -5
+        }
+      },
+      "swipe_right": {
+        "label": "Не согласен",
+        "effects": {
+          "chaos": -10,
+          "loyalty": 5,
+          "vibe": 5
+        }
+      }
+    },
+    {
+      "id": "campus_01",
+      "mode": "campus",
+      "text": "Списать у однокурсника — это взаимопомощь.",
+      "swipe_left": {
+        "label": "Согласен",
+        "effects": {
+          "solidarity": 15,
+          "freebie": 10,
+          "madness": -25
+        }
+      },
+      "swipe_right": {
+        "label": "Не согласен",
+        "effects": {
+          "solidarity": -15,
+          "freebie": -10,
+          "madness": 25
+        }
+      }
+    },
+    {
+      "id": "campus_02",
+      "mode": "campus",
+      "text": "Подписать за друга лист посещаемости.",
+      "swipe_left": {
+        "label": "Согласен",
+        "effects": {
+          "solidarity": 20,
+          "freebie": 10,
+          "madness": -30
+        }
+      },
+      "swipe_right": {
+        "label": "Не согласен",
+        "effects": {
+          "solidarity": -15,
+          "freebie": -5,
+          "madness": 20
+        }
+      }
+    },
+    {
+      "id": "campus_03",
+      "mode": "campus",
+      "text": "Прийти на пару только ради бесплатной пиццы после неё.",
+      "swipe_left": {
+        "label": "Согласен",
+        "effects": {
+          "solidarity": -5,
+          "freebie": 20,
+          "madness": -15
+        }
+      },
+      "swipe_right": {
+        "label": "Не согласен",
+        "effects": {
+          "solidarity": 5,
+          "freebie": -20,
+          "madness": 15
+        }
+      }
+    },
+    {
+      "id": "campus_04",
+      "mode": "campus",
+      "text": "Поделиться своими конспектами со всем потоком бесплатно.",
+      "swipe_left": {
+        "label": "Согласен",
+        "effects": {
+          "solidarity": 20,
+          "freebie": -15,
+          "madness": -5
+        }
+      },
+      "swipe_right": {
+        "label": "Не согласен",
+        "effects": {
+          "solidarity": -15,
+          "freebie": 15,
+          "madness": 0
+        }
+      }
+    },
+    {
+      "id": "campus_05",
+      "mode": "campus",
+      "text": "Лучше провалить зачёт, чем сдать по шпаргалке.",
+      "swipe_left": {
+        "label": "Согласен",
+        "effects": {
+          "solidarity": -10,
+          "freebie": -5,
+          "madness": 15
+        }
+      },
+      "swipe_right": {
+        "label": "Не согласен",
+        "effects": {
+          "solidarity": 10,
+          "freebie": 5,
+          "madness": -15
+        }
+      }
+    },
+    {
+      "id": "campus_06",
+      "mode": "campus",
+      "text": "Всю ночь не спать ради вечеринки перед экзаменом.",
+      "swipe_left": {
+        "label": "Согласен",
+        "effects": {
+          "solidarity": -15,
+          "freebie": 5,
+          "madness": 10
+        }
+      },
+      "swipe_right": {
+        "label": "Не согласен",
+        "effects": {
+          "solidarity": 15,
+          "freebie": -5,
+          "madness": -10
+        }
+      }
+    },
+    {
+      "id": "campus_07",
+      "mode": "campus",
+      "text": "Съесть чужой подписанный йогурт из общего холодильника в общаге.",
+      "swipe_left": {
+        "label": "Согласен",
+        "effects": {
+          "solidarity": -10,
+          "freebie": 20,
+          "madness": -10
+        }
+      },
+      "swipe_right": {
+        "label": "Не согласен",
+        "effects": {
+          "solidarity": 10,
+          "freebie": -15,
+          "madness": 5
+        }
+      }
+    },
+    {
+      "id": "campus_08",
+      "mode": "campus",
+      "text": "Сдать преподавателю того, кто сорвал пару.",
+      "swipe_left": {
+        "label": "Согласен",
+        "effects": {
+          "solidarity": -15,
+          "freebie": 5,
+          "madness": 10
+        }
+      },
+      "swipe_right": {
+        "label": "Не согласен",
+        "effects": {
+          "solidarity": 15,
+          "freebie": -5,
+          "madness": -10
+        }
+      }
+    },
+    {
+      "id": "campus_09",
+      "mode": "campus",
+      "text": "Устроить флешмоб посреди лекции.",
+      "swipe_left": {
+        "label": "Согласен",
+        "effects": {
+          "solidarity": 15,
+          "freebie": -5,
+          "madness": -10
+        }
+      },
+      "swipe_right": {
+        "label": "Не согласен",
+        "effects": {
+          "solidarity": -10,
+          "freebie": 5,
+          "madness": 5
+        }
+      }
+    },
+    {
+      "id": "campus_10",
+      "mode": "campus",
+      "text": "Занять очередь в столовую для всей группы.",
+      "swipe_left": {
+        "label": "Согласен",
+        "effects": {
+          "solidarity": 15,
+          "freebie": 15,
+          "madness": -30
+        }
+      },
+      "swipe_right": {
+        "label": "Не согласен",
+        "effects": {
+          "solidarity": -10,
+          "freebie": -10,
+          "madness": 20
+        }
+      }
+    },
+    {
+      "id": "campus_11",
+      "mode": "campus",
+      "text": "Пойти на скучное мероприятие ради бесплатного мерча.",
+      "swipe_left": {
+        "label": "Согласен",
+        "effects": {
+          "solidarity": -10,
+          "freebie": 20,
+          "madness": -10
+        }
+      },
+      "swipe_right": {
+        "label": "Не согласен",
+        "effects": {
+          "solidarity": 10,
+          "freebie": -20,
+          "madness": 10
+        }
+      }
+    },
+    {
+      "id": "campus_12",
+      "mode": "campus",
+      "text": "Позвать на вечеринку весь этаж общаги.",
+      "swipe_left": {
+        "label": "Согласен",
+        "effects": {
+          "solidarity": 10,
+          "freebie": 10,
+          "madness": -20
+        }
+      },
+      "swipe_right": {
+        "label": "Не согласен",
+        "effects": {
+          "solidarity": -10,
+          "freebie": -10,
+          "madness": 20
+        }
+      }
+    },
+    {
+      "id": "campus_13",
+      "mode": "campus",
+      "text": "Сделать групповой проект самому(ой), чтобы не ссориться.",
+      "swipe_left": {
+        "label": "Согласен",
+        "effects": {
+          "solidarity": -5,
+          "freebie": -10,
+          "madness": 15
+        }
+      },
+      "swipe_right": {
+        "label": "Не согласен",
+        "effects": {
+          "solidarity": 5,
+          "freebie": 10,
+          "madness": -15
+        }
+      }
+    },
+    {
+      "id": "campus_14",
+      "mode": "campus",
+      "text": "Взять чужой ноутбук на пару без спроса.",
+      "swipe_left": {
+        "label": "Согласен",
+        "effects": {
+          "solidarity": -10,
+          "freebie": 15,
+          "madness": -5
+        }
+      },
+      "swipe_right": {
+        "label": "Не согласен",
+        "effects": {
+          "solidarity": 10,
+          "freebie": -15,
+          "madness": 5
+        }
+      }
+    },
+    {
+      "id": "campus_15",
+      "mode": "campus",
+      "text": "Прогулять первую пару ради сна — святое.",
+      "swipe_left": {
+        "label": "Согласен",
+        "effects": {
+          "solidarity": -5,
+          "freebie": 5,
+          "madness": 10
+        }
+      },
+      "swipe_right": {
+        "label": "Не согласен",
+        "effects": {
+          "solidarity": 5,
+          "freebie": -5,
+          "madness": -10
+        }
+      }
+    },
+    {
+      "id": "campus_16",
+      "mode": "campus",
+      "text": "Заказать на всех доставку и поделить чек по-честному, а не по-братски.",
+      "swipe_left": {
+        "label": "Согласен",
+        "effects": {
+          "solidarity": -10,
+          "freebie": -5,
+          "madness": 15
+        }
+      },
+      "swipe_right": {
+        "label": "Не согласен",
+        "effects": {
+          "solidarity": 10,
+          "freebie": 5,
+          "madness": -15
+        }
+      }
+    },
+    {
+      "id": "campus_17",
+      "mode": "campus",
+      "text": "Выступить на сцене капустника без репетиции.",
+      "swipe_left": {
+        "label": "Согласен",
+        "effects": {
+          "solidarity": 15,
+          "freebie": -5,
+          "madness": -10
+        }
+      },
+      "swipe_right": {
+        "label": "Не согласен",
+        "effects": {
+          "solidarity": -10,
+          "freebie": 5,
+          "madness": 5
+        }
+      }
+    },
+    {
+      "id": "campus_18",
+      "mode": "campus",
+      "text": "Подсказать другу на экзамене, рискуя вылететь.",
+      "swipe_left": {
+        "label": "Согласен",
+        "effects": {
+          "solidarity": 20,
+          "freebie": -5,
+          "madness": -15
+        }
+      },
+      "swipe_right": {
+        "label": "Не согласен",
+        "effects": {
+          "solidarity": -15,
+          "freebie": 5,
+          "madness": 10
+        }
+      }
+    },
+    {
+      "id": "campus_19",
+      "mode": "campus",
+      "text": "Подпеть преподавателю на лекции, если он поёт.",
+      "swipe_left": {
+        "label": "Согласен",
+        "effects": {
+          "solidarity": 5,
+          "freebie": -10,
+          "madness": 5
+        }
+      },
+      "swipe_right": {
+        "label": "Не согласен",
+        "effects": {
+          "solidarity": -5,
+          "freebie": 10,
+          "madness": -5
+        }
+      }
+    },
+    {
+      "id": "campus_20",
+      "mode": "campus",
+      "text": "Оставить для всех объявление на доске «мы лучшие».",
+      "swipe_left": {
+        "label": "Согласен",
+        "effects": {
+          "solidarity": 15,
+          "freebie": -5,
+          "madness": -10
+        }
+      },
+      "swipe_right": {
+        "label": "Не согласен",
+        "effects": {
+          "solidarity": -10,
+          "freebie": 5,
+          "madness": 5
+        }
+      }
+    },
+    {
+      "id": "office_01",
+      "mode": "office",
+      "text": "Принять халявный кофе и печеньки от соседнего отдела.",
+      "swipe_left": {
+        "label": "Согласен",
+        "effects": {
+          "spirit": 10,
+          "professionalism": -10,
+          "party": 0
+        }
+      },
+      "swipe_right": {
+        "label": "Не согласен",
+        "effects": {
+          "spirit": -5,
+          "professionalism": 5,
+          "party": 0
+        }
+      }
+    },
+    {
+      "id": "office_02",
+      "mode": "office",
+      "text": "Пропустить дедлайн ради командного обеда.",
+      "swipe_left": {
+        "label": "Согласен",
+        "effects": {
+          "spirit": 15,
+          "professionalism": -25,
+          "party": 10
+        }
+      },
+      "swipe_right": {
+        "label": "Не согласен",
+        "effects": {
+          "spirit": -15,
+          "professionalism": 20,
+          "party": -5
+        }
+      }
+    },
+    {
+      "id": "office_03",
+      "mode": "office",
+      "text": "Отправить письмо «всем» с шуткой про босса.",
+      "swipe_left": {
+        "label": "Согласен",
+        "effects": {
+          "spirit": 10,
+          "professionalism": -20,
+          "party": 10
+        }
+      },
+      "swipe_right": {
+        "label": "Не согласен",
+        "effects": {
+          "spirit": -5,
+          "professionalism": 15,
+          "party": -10
+        }
+      }
+    },
+    {
+      "id": "office_04",
+      "mode": "office",
+      "text": "Остаться в офисе после шести ради срочного проекта.",
+      "swipe_left": {
+        "label": "Согласен",
+        "effects": {
+          "spirit": 10,
+          "professionalism": 15,
+          "party": -25
+        }
+      },
+      "swipe_right": {
+        "label": "Не согласен",
+        "effects": {
+          "spirit": -10,
+          "professionalism": -15,
+          "party": 25
+        }
+      }
+    },
+    {
+      "id": "office_05",
+      "mode": "office",
+      "text": "Прийти на корпоратив в самом дурацком костюме.",
+      "swipe_left": {
+        "label": "Согласен",
+        "effects": {
+          "spirit": 10,
+          "professionalism": -15,
+          "party": 15
+        }
+      },
+      "swipe_right": {
+        "label": "Не согласен",
+        "effects": {
+          "spirit": -5,
+          "professionalism": 10,
+          "party": -10
+        }
+      }
+    },
+    {
+      "id": "office_06",
+      "mode": "office",
+      "text": "Взять на себя чужую задачу, чтобы коллеге помочь.",
+      "swipe_left": {
+        "label": "Согласен",
+        "effects": {
+          "spirit": 20,
+          "professionalism": -5,
+          "party": -15
+        }
+      },
+      "swipe_right": {
+        "label": "Не согласен",
+        "effects": {
+          "spirit": -15,
+          "professionalism": 5,
+          "party": 10
+        }
+      }
+    },
+    {
+      "id": "office_07",
+      "mode": "office",
+      "text": "Пожаловаться на коллегу руководителю.",
+      "swipe_left": {
+        "label": "Согласен",
+        "effects": {
+          "spirit": -20,
+          "professionalism": 25,
+          "party": -5
+        }
+      },
+      "swipe_right": {
+        "label": "Не согласен",
+        "effects": {
+          "spirit": 15,
+          "professionalism": -20,
+          "party": 5
+        }
+      }
+    },
+    {
+      "id": "office_08",
+      "mode": "office",
+      "text": "Подписаться на все рабочие чаты и отвечать мгновенно.",
+      "swipe_left": {
+        "label": "Согласен",
+        "effects": {
+          "spirit": -5,
+          "professionalism": 15,
+          "party": -10
+        }
+      },
+      "swipe_right": {
+        "label": "Не согласен",
+        "effects": {
+          "spirit": 5,
+          "professionalism": -15,
+          "party": 10
+        }
+      }
+    },
+    {
+      "id": "office_09",
+      "mode": "office",
+      "text": "Дать честную обратную связь на планёрке публично.",
+      "swipe_left": {
+        "label": "Согласен",
+        "effects": {
+          "spirit": -10,
+          "professionalism": 20,
+          "party": -10
+        }
+      },
+      "swipe_right": {
+        "label": "Не согласен",
+        "effects": {
+          "spirit": 10,
+          "professionalism": -20,
+          "party": 10
+        }
+      }
+    },
+    {
+      "id": "office_10",
+      "mode": "office",
+      "text": "Выпить на корпоративе лишнего и спеть караоке.",
+      "swipe_left": {
+        "label": "Согласен",
+        "effects": {
+          "spirit": 10,
+          "professionalism": -15,
+          "party": 15
+        }
+      },
+      "swipe_right": {
+        "label": "Не согласен",
+        "effects": {
+          "spirit": -5,
+          "professionalism": 10,
+          "party": -10
+        }
+      }
+    },
+    {
+      "id": "office_11",
+      "mode": "office",
+      "text": "Взять отгул в день «важного» совещания.",
+      "swipe_left": {
+        "label": "Согласен",
+        "effects": {
+          "spirit": -10,
+          "professionalism": -15,
+          "party": 25
+        }
+      },
+      "swipe_right": {
+        "label": "Не согласен",
+        "effects": {
+          "spirit": 10,
+          "professionalism": 15,
+          "party": -25
+        }
+      }
+    },
+    {
+      "id": "office_12",
+      "mode": "office",
+      "text": "Совместный обед важнее личной эффективности.",
+      "swipe_left": {
+        "label": "Согласен",
+        "effects": {
+          "spirit": 20,
+          "professionalism": -10,
+          "party": -10
+        }
+      },
+      "swipe_right": {
+        "label": "Не согласен",
+        "effects": {
+          "spirit": -15,
+          "professionalism": 10,
+          "party": 5
+        }
+      }
+    },
+    {
+      "id": "office_13",
+      "mode": "office",
+      "text": "Перепечатать отчёт в 5-й раз ради идеала.",
+      "swipe_left": {
+        "label": "Согласен",
+        "effects": {
+          "spirit": -10,
+          "professionalism": 20,
+          "party": -10
+        }
+      },
+      "swipe_right": {
+        "label": "Не согласен",
+        "effects": {
+          "spirit": 10,
+          "professionalism": -20,
+          "party": 10
+        }
+      }
+    },
+    {
+      "id": "office_14",
+      "mode": "office",
+      "text": "Рассказать коллеге зарплатную вилку.",
+      "swipe_left": {
+        "label": "Согласен",
+        "effects": {
+          "spirit": 15,
+          "professionalism": -10,
+          "party": -5
+        }
+      },
+      "swipe_right": {
+        "label": "Не согласен",
+        "effects": {
+          "spirit": -10,
+          "professionalism": 10,
+          "party": 0
+        }
+      }
+    },
+    {
+      "id": "office_15",
+      "mode": "office",
+      "text": "Признать на встрече, что ты не знаешь ответ.",
+      "swipe_left": {
+        "label": "Согласен",
+        "effects": {
+          "spirit": 10,
+          "professionalism": -5,
+          "party": -5
+        }
+      },
+      "swipe_right": {
+        "label": "Не согласен",
+        "effects": {
+          "spirit": -10,
+          "professionalism": 5,
+          "party": 5
+        }
+      }
+    },
+    {
+      "id": "office_16",
+      "mode": "office",
+      "text": "Сделать выступление на планёрке шуткой.",
+      "swipe_left": {
+        "label": "Согласен",
+        "effects": {
+          "spirit": 15,
+          "professionalism": -10,
+          "party": -5
+        }
+      },
+      "swipe_right": {
+        "label": "Не согласен",
+        "effects": {
+          "spirit": -10,
+          "professionalism": 10,
+          "party": 0
+        }
+      }
+    },
+    {
+      "id": "office_17",
+      "mode": "office",
+      "text": "Брать ответственность за чужую ошибку.",
+      "swipe_left": {
+        "label": "Согласен",
+        "effects": {
+          "spirit": 20,
+          "professionalism": -10,
+          "party": -10
+        }
+      },
+      "swipe_right": {
+        "label": "Не согласен",
+        "effects": {
+          "spirit": -15,
+          "professionalism": 10,
+          "party": 5
+        }
+      }
+    },
+    {
+      "id": "office_18",
+      "mode": "office",
+      "text": "Не отвечать на сообщения после девяти вечера.",
+      "swipe_left": {
+        "label": "Согласен",
+        "effects": {
+          "spirit": -5,
+          "professionalism": 10,
+          "party": -5
+        }
+      },
+      "swipe_right": {
+        "label": "Не согласен",
+        "effects": {
+          "spirit": 5,
+          "professionalism": -10,
+          "party": 5
+        }
+      }
+    },
+    {
+      "id": "office_19",
+      "mode": "office",
+      "text": "Принять сторону друга-коллеги против руководства.",
+      "swipe_left": {
+        "label": "Согласен",
+        "effects": {
+          "spirit": 20,
+          "professionalism": -15,
+          "party": -5
+        }
+      },
+      "swipe_right": {
+        "label": "Не согласен",
+        "effects": {
+          "spirit": -15,
+          "professionalism": 10,
+          "party": 5
+        }
+      }
+    },
+    {
+      "id": "office_20",
+      "mode": "office",
+      "text": "Запустить внутри команды мемный конкурс.",
+      "swipe_left": {
+        "label": "Согласен",
+        "effects": {
+          "spirit": 20,
+          "professionalism": -5,
+          "party": -15
+        }
+      },
+      "swipe_right": {
+        "label": "Не согласен",
+        "effects": {
+          "spirit": -15,
+          "professionalism": 5,
+          "party": 10
+        }
+      }
+    },
+    {
+      "id": "family_01",
+      "mode": "family",
+      "text": "За праздничным столом нельзя пользоваться телефоном.",
+      "swipe_left": {
+        "label": "Согласен",
+        "effects": {
+          "wisdom": 10,
+          "care": -5,
+          "traditions": -5
+        }
+      },
+      "swipe_right": {
+        "label": "Не согласен",
+        "effects": {
+          "wisdom": -10,
+          "care": 5,
+          "traditions": 5
+        }
+      }
+    },
+    {
+      "id": "family_02",
+      "mode": "family",
+      "text": "Слушаться старших, даже когда они не правы.",
+      "swipe_left": {
+        "label": "Согласен",
+        "effects": {
+          "wisdom": 15,
+          "care": 5,
+          "traditions": -20
+        }
+      },
+      "swipe_right": {
+        "label": "Не согласен",
+        "effects": {
+          "wisdom": -10,
+          "care": -5,
+          "traditions": 15
+        }
+      }
+    },
+    {
+      "id": "family_03",
+      "mode": "family",
+      "text": "Каждое воскресенье обедаем всей семьёй.",
+      "swipe_left": {
+        "label": "Согласен",
+        "effects": {
+          "wisdom": -10,
+          "care": 15,
+          "traditions": -5
+        }
+      },
+      "swipe_right": {
+        "label": "Не согласен",
+        "effects": {
+          "wisdom": 10,
+          "care": -15,
+          "traditions": 5
+        }
+      }
+    },
+    {
+      "id": "family_04",
+      "mode": "family",
+      "text": "Подарки на Новый год лучше выбирать самим, а не просить список.",
+      "swipe_left": {
+        "label": "Согласен",
+        "effects": {
+          "wisdom": 10,
+          "care": -10,
+          "traditions": 0
+        }
+      },
+      "swipe_right": {
+        "label": "Не согласен",
+        "effects": {
+          "wisdom": -10,
+          "care": 10,
+          "traditions": 0
+        }
+      }
+    },
+    {
+      "id": "family_05",
+      "mode": "family",
+      "text": "Рассказать бабушке «по-честному» о своих проблемах.",
+      "swipe_left": {
+        "label": "Согласен",
+        "effects": {
+          "wisdom": 20,
+          "care": -10,
+          "traditions": -10
+        }
+      },
+      "swipe_right": {
+        "label": "Не согласен",
+        "effects": {
+          "wisdom": -15,
+          "care": 10,
+          "traditions": 5
+        }
+      }
+    },
+    {
+      "id": "family_06",
+      "mode": "family",
+      "text": "Праздник можно отменить ради поездки на море.",
+      "swipe_left": {
+        "label": "Согласен",
+        "effects": {
+          "wisdom": -15,
+          "care": 5,
+          "traditions": 10
+        }
+      },
+      "swipe_right": {
+        "label": "Не согласен",
+        "effects": {
+          "wisdom": 15,
+          "care": -5,
+          "traditions": -10
+        }
+      }
+    },
+    {
+      "id": "family_07",
+      "mode": "family",
+      "text": "Купить родителям новую технику без их согласия.",
+      "swipe_left": {
+        "label": "Согласен",
+        "effects": {
+          "wisdom": -10,
+          "care": 20,
+          "traditions": -10
+        }
+      },
+      "swipe_right": {
+        "label": "Не согласен",
+        "effects": {
+          "wisdom": 10,
+          "care": -15,
+          "traditions": 5
+        }
+      }
+    },
+    {
+      "id": "family_08",
+      "mode": "family",
+      "text": "Менять рецепты бабушки — кощунство.",
+      "swipe_left": {
+        "label": "Согласен",
+        "effects": {
+          "wisdom": 10,
+          "care": -15,
+          "traditions": 5
+        }
+      },
+      "swipe_right": {
+        "label": "Не согласен",
+        "effects": {
+          "wisdom": -10,
+          "care": 15,
+          "traditions": -5
+        }
+      }
+    },
+    {
+      "id": "family_09",
+      "mode": "family",
+      "text": "Передавать семейные реликвии младшим уже сейчас.",
+      "swipe_left": {
+        "label": "Согласен",
+        "effects": {
+          "wisdom": -10,
+          "care": 10,
+          "traditions": 0
+        }
+      },
+      "swipe_right": {
+        "label": "Не согласен",
+        "effects": {
+          "wisdom": 10,
+          "care": -10,
+          "traditions": 0
+        }
+      }
+    },
+    {
+      "id": "family_10",
+      "mode": "family",
+      "text": "Принять сторону одного родственника в споре.",
+      "swipe_left": {
+        "label": "Согласен",
+        "effects": {
+          "wisdom": -10,
+          "care": 15,
+          "traditions": -5
+        }
+      },
+      "swipe_right": {
+        "label": "Не согласен",
+        "effects": {
+          "wisdom": 10,
+          "care": -15,
+          "traditions": 5
+        }
+      }
+    },
+    {
+      "id": "family_11",
+      "mode": "family",
+      "text": "Первым звонить родителям после долгой паузы.",
+      "swipe_left": {
+        "label": "Согласен",
+        "effects": {
+          "wisdom": -5,
+          "care": 15,
+          "traditions": -10
+        }
+      },
+      "swipe_right": {
+        "label": "Не согласен",
+        "effects": {
+          "wisdom": 5,
+          "care": -15,
+          "traditions": 10
+        }
+      }
+    },
+    {
+      "id": "family_12",
+      "mode": "family",
+      "text": "Совмещать два праздника в один день ради экономии сил.",
+      "swipe_left": {
+        "label": "Согласен",
+        "effects": {
+          "wisdom": -5,
+          "care": 10,
+          "traditions": -5
+        }
+      },
+      "swipe_right": {
+        "label": "Не согласен",
+        "effects": {
+          "wisdom": 5,
+          "care": -10,
+          "traditions": 5
+        }
+      }
+    },
+    {
+      "id": "family_13",
+      "mode": "family",
+      "text": "Заставлять детей доедать всё до конца.",
+      "swipe_left": {
+        "label": "Согласен",
+        "effects": {
+          "wisdom": 10,
+          "care": -15,
+          "traditions": 5
+        }
+      },
+      "swipe_right": {
+        "label": "Не согласен",
+        "effects": {
+          "wisdom": -10,
+          "care": 15,
+          "traditions": -5
+        }
+      }
+    },
+    {
+      "id": "family_14",
+      "mode": "family",
+      "text": "Помогать деньгами родственникам, которые не просят.",
+      "swipe_left": {
+        "label": "Согласен",
+        "effects": {
+          "wisdom": -10,
+          "care": 20,
+          "traditions": -10
+        }
+      },
+      "swipe_right": {
+        "label": "Не согласен",
+        "effects": {
+          "wisdom": 10,
+          "care": -20,
+          "traditions": 10
+        }
+      }
+    },
+    {
+      "id": "family_15",
+      "mode": "family",
+      "text": "Рассказать ребёнку семейную тайну.",
+      "swipe_left": {
+        "label": "Согласен",
+        "effects": {
+          "wisdom": 15,
+          "care": -5,
+          "traditions": -10
+        }
+      },
+      "swipe_right": {
+        "label": "Не согласен",
+        "effects": {
+          "wisdom": -10,
+          "care": 5,
+          "traditions": 5
+        }
+      }
+    },
+    {
+      "id": "family_16",
+      "mode": "family",
+      "text": "Отмечать день рождения только в кругу семьи.",
+      "swipe_left": {
+        "label": "Согласен",
+        "effects": {
+          "wisdom": -5,
+          "care": 5,
+          "traditions": 0
+        }
+      },
+      "swipe_right": {
+        "label": "Не согласен",
+        "effects": {
+          "wisdom": 5,
+          "care": -5,
+          "traditions": 0
+        }
+      }
+    },
+    {
+      "id": "family_17",
+      "mode": "family",
+      "text": "Передать семейное дело в руки молодых.",
+      "swipe_left": {
+        "label": "Согласен",
+        "effects": {
+          "wisdom": -15,
+          "care": 5,
+          "traditions": 10
+        }
+      },
+      "swipe_right": {
+        "label": "Не согласен",
+        "effects": {
+          "wisdom": 15,
+          "care": -5,
+          "traditions": -10
+        }
+      }
+    },
+    {
+      "id": "family_18",
+      "mode": "family",
+      "text": "Иногда можно соврать старшим, чтобы их не огорчать.",
+      "swipe_left": {
+        "label": "Согласен",
+        "effects": {
+          "wisdom": -15,
+          "care": 20,
+          "traditions": -5
+        }
+      },
+      "swipe_right": {
+        "label": "Не согласен",
+        "effects": {
+          "wisdom": 15,
+          "care": -20,
+          "traditions": 5
+        }
+      }
+    },
+    {
+      "id": "family_19",
+      "mode": "family",
+      "text": "Дедушкины истории надо слушать до конца, даже в десятый раз.",
+      "swipe_left": {
+        "label": "Согласен",
+        "effects": {
+          "wisdom": 15,
+          "care": 10,
+          "traditions": -25
+        }
+      },
+      "swipe_right": {
+        "label": "Не согласен",
+        "effects": {
+          "wisdom": -10,
+          "care": -10,
+          "traditions": 20
+        }
+      }
+    },
+    {
+      "id": "family_20",
+      "mode": "family",
+      "text": "Не обсуждать за столом политику.",
+      "swipe_left": {
+        "label": "Согласен",
+        "effects": {
+          "wisdom": -5,
+          "care": 10,
+          "traditions": -5
+        }
+      },
+      "swipe_right": {
+        "label": "Не согласен",
+        "effects": {
+          "wisdom": 5,
+          "care": -10,
+          "traditions": 5
+        }
+      }
+    }
+  ],
+  "tasks": [
+    {
+      "id": "date_task_01",
+      "mode": "date",
+      "text": "Признайтесь партнёру в трёх вещах, которые вам в нём нравятся, глядя в глаза."
+    },
+    {
+      "id": "date_task_02",
+      "mode": "date",
+      "text": "Сделайте партнёру 60-секундный массаж плеч и пожелайте ему приятного вечера."
+    },
+    {
+      "id": "date_task_03",
+      "mode": "date",
+      "text": "Расскажите, как вы представляете ваше идеальное свидание, за 1 минуту."
+    },
+    {
+      "id": "date_task_04",
+      "mode": "date",
+      "text": "Изобразите, как партнёр засыпает, и сделайте вид, что вы будите его поцелуем в лоб."
+    },
+    {
+      "id": "date_task_05",
+      "mode": "date",
+      "text": "Составьте и произнесите вслух мини-клятву влюблённых из пяти слов."
+    },
+    {
+      "id": "friends_task_01",
+      "mode": "friends",
+      "text": "Расскажите самую нелепую историю про вас и этих друзей за 1 минуту."
+    },
+    {
+      "id": "friends_task_02",
+      "mode": "friends",
+      "text": "Станцуйте под воображаемый хит, который вы придумали на ходу."
+    },
+    {
+      "id": "friends_task_03",
+      "mode": "friends",
+      "text": "Дайте каждому в компании смешное прозвище и объясните выбор."
+    },
+    {
+      "id": "friends_task_04",
+      "mode": "friends",
+      "text": "Позвоните «в никуда» и расскажите воображаемому другу о новостях дня."
+    },
+    {
+      "id": "friends_task_05",
+      "mode": "friends",
+      "text": "Изобразите любого друга из компании, чтобы остальные угадали."
+    },
+    {
+      "id": "campus_task_01",
+      "mode": "campus",
+      "text": "Прочитайте конспект лекции в стиле рэпа (придумайте на ходу) — 1 минута."
+    },
+    {
+      "id": "campus_task_02",
+      "mode": "campus",
+      "text": "Нарисуйте на листке портрет преподавателя, который вы никогда не видели, и представьте."
+    },
+    {
+      "id": "campus_task_03",
+      "mode": "campus",
+      "text": "Изобразите студента, который проснулся за 5 минут до экзамена."
+    },
+    {
+      "id": "campus_task_04",
+      "mode": "campus",
+      "text": "Придумайте оправдание для опоздания, самое абсурдное, и расскажите с серьёзным лицом."
+    },
+    {
+      "id": "campus_task_05",
+      "mode": "campus",
+      "text": "Дайте 60-секундную «лекцию» о пользе халявной пиццы."
+    },
+    {
+      "id": "office_task_01",
+      "mode": "office",
+      "text": "Проведите 90-секундную планёрку о выборе, чем заедать кофе."
+    },
+    {
+      "id": "office_task_02",
+      "mode": "office",
+      "text": "Произнесите тост за коллектив в стиле директора на корпоративе."
+    },
+    {
+      "id": "office_task_03",
+      "mode": "office",
+      "text": "Изобразите корпоративную презентацию по теме «Почему мы любим перерывы»."
+    },
+    {
+      "id": "office_task_04",
+      "mode": "office",
+      "text": "Расскажите вымышленный отчёт об успехах компании в формате новостного выпуска."
+    },
+    {
+      "id": "office_task_05",
+      "mode": "office",
+      "text": "Сыграйте сценку «звонок клиенту, который просит невозможное»."
+    },
+    {
+      "id": "family_task_01",
+      "mode": "family",
+      "text": "Расскажите семейную историю, которую знаете только вы, за 1 минуту."
+    },
+    {
+      "id": "family_task_02",
+      "mode": "family",
+      "text": "Произнесите тост за семью в стиле бабушки."
+    },
+    {
+      "id": "family_task_03",
+      "mode": "family",
+      "text": "Изобразите, как вы учите младшего родственника варить борщ."
+    },
+    {
+      "id": "family_task_04",
+      "mode": "family",
+      "text": "Спойте колыбельную, которую придумаете прямо сейчас, 30 секунд."
+    },
+    {
+      "id": "family_task_05",
+      "mode": "family",
+      "text": "Назовите по одному доброму качеству каждого из присутствующих."
+    }
+  ]
+}

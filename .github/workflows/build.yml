@@ -1,0 +1,58 @@
+name: Build APK
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '17'
+
+      - uses: subosito/flutter-action@v2
+        with:
+          channel: stable
+          cache: true   # кэш Flutter SDK и pub-пакетов
+
+      - name: Cache Gradle
+        uses: actions/cache@v4
+        with:
+          path: |
+            ~/.gradle/caches
+            ~/.gradle/wrapper
+          key: gradle-${{ runner.os }}-${{ hashFiles('**/*.gradle*', '**/gradle-wrapper.properties') }}
+          restore-keys: gradle-${{ runner.os }}-
+
+      - name: Install dependencies
+        run: flutter pub get
+
+      # --- Release-подпись (раскомментируйте, когда заведёте секреты) ---
+      # Нужны секреты: KEYSTORE_BASE64, KEYSTORE_PASSWORD, KEY_PASSWORD, KEY_ALIAS
+      # и чтение key.properties в android/app/build.gradle
+      # (signingConfigs.release { storeFile file(keystoreProperties['storeFile']) ... }).
+      # - name: Release signing
+      #   run: |
+      #     echo "${{ secrets.KEYSTORE_BASE64 }}" | base64 -d > android/app/upload.jks
+      #     cat > android/key.properties <<EOF
+      #     storePassword=${{ secrets.KEYSTORE_PASSWORD }}
+      #     keyPassword=${{ secrets.KEY_PASSWORD }}
+      #     keyAlias=${{ secrets.KEY_ALIAS }}
+      #     storeFile=upload.jks
+      #     EOF
+
+      - name: Build APK (release; без секретов подписывается debug-ключом)
+        run: flutter build apk --release
+
+      - name: Upload APK artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: balance-apk
+          path: build/app/outputs/flutter-apk/app-release.apk
+          if-no-files-found: error
